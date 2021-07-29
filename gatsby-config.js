@@ -1,7 +1,12 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://www.brycedefig.com",
     title: "brycedefig.com",
   },
-  plugins: ["gatsby-plugin-theme-ui", "gatsby-plugin-gatsby-cloud"],
+  plugins: [
+    "gatsby-plugin-gatsby-cloud",
+    "gatsby-plugin-theme-ui",
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp"
+  ],
 };
