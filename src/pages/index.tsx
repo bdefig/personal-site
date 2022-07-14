@@ -33,7 +33,7 @@ const IndexPage = () => {
             </Flex>
           </Flex>
           <DescriptionParagraph>
-            Hey, I'm Bryce. I like building things and thinking about the future, but I don't really like writing&mdash;so naturally, I built this site so that I could write about the future and the things I'm building. I’m a product manager by background, an engineer by training, and a founder by disposition.
+            Hey, I'm Bryce. I like building things and I don't really like writing, so I built this site to help me write more. I’m a product manager by background, an engineer by training, and a founder by disposition.
           </DescriptionParagraph>
           <DescriptionParagraph>
             I’m currently working on <a href='https://www.jetpackai.com' target='_blank'>Jetpack</a>, a virtual assistant that's your second brain. Previously, I was a PM at <a href='https://www.lucidchart.com' target='_blank'>Lucid Software</a>, a managing partner at <a href='https://www.campusfounders.com' target='_blank'>Campus Founders Fund</a>, and a student at <a href='https://www.hbs.edu' target='_blank'>HBS</a> and <a href='https://www.byu.edu' target='_blank'>BYU</a>.
