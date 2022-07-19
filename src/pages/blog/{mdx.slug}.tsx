@@ -8,7 +8,7 @@ import Layout from '../../components/Layout';
 
 const BlogPost = ({ data }) => {
 	return (
-		<Layout pageTitle={"Blog Post Title Here"}>
+		<Layout pageTitle={data.mdx.frontmatter.title}>
 			<Heading as="h1">{data.mdx.frontmatter.title}</Heading>
 			<MDXRenderer>
 				{data.mdx.body}
