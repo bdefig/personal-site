@@ -8,7 +8,7 @@ import { MDXProvider } from '@mdx-js/react';
 import { Flex, Heading, Paragraph } from 'theme-ui';
 import { FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 
-import siteTheme, { colors } from '../gatsby-plugin-theme-ui';
+import siteTheme, { colors, componentColors } from '../gatsby-plugin-theme-ui';
 import { ExternalLink, UnstyledGatsbyLink } from './Link';
 
 
@@ -163,7 +163,7 @@ const headerContainerStyle: ThemeUIStyleObject = {
   marginBottom: 24,
   borderStyle: 'solid',
   borderWidth: '0px 0px 1px 0px',
-  borderColor: '#f2f2f2'
+  borderColor: componentColors.divider
 }
 
 const headerContentContainerStyle: ThemeUIStyleObject = {
@@ -182,7 +182,7 @@ const navLinkStyle: ThemeUIStyleObject = {
   fontSize: '24px',
   fontFamily: siteTheme.fonts['body'],
   textDecoration: 'none',
-  color: '#bdbdbd',
+  color: colors.gray4,
   '&:hover': {
     color: siteTheme.colors.primary
   },

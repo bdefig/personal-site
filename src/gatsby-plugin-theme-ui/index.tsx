@@ -2,11 +2,20 @@ import { Theme } from 'theme-ui';
 
 export const colors = {
   gray1: "#333333",
+  gray2: "#4f4f4f",
+  gray3: "#828282",
+  gray4: "#bdbdbd",
+  gray5: "#e0e0e0",
+  gray6: "#f2f2f2",
   white: "#ffffff",
   bluePalette: "#2979ff",
   blueLight: "#75a7ff",
   blueDark: "#004ecb",
   coral: "#f09595"
+}
+
+export const componentColors = {
+  divider: colors.gray6
 }
 
 const siteTheme: Theme = {
@@ -51,6 +60,7 @@ const siteTheme: Theme = {
       fontFamily: "body"
     },
     a: {
+      fontFamily: "body",
       color: colors.bluePalette,
       '&:hover': {
         color: colors.blueDark

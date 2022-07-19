@@ -12,7 +12,7 @@ const BlogPage = ({ data }) => {
 			{
 				data.allMdx.nodes.map(node => {
 					return (
-						<article key={node.id}>
+						<article key={node.id} style={{marginBottom: 16}}>
 							<Heading>
 								<InternalLink to={`/blog/${node.slug}`}>
 									{node.frontmatter.title}

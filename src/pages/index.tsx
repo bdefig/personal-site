@@ -4,7 +4,9 @@ import { jsx, ThemeUIStyleObject } from "theme-ui";
 import { Paragraph } from 'theme-ui';
 
 import Layout from '../components/Layout';
+import LatestPosts from "../components/LatestPosts";
 import { ExternalLink } from "../components/Link";
+import { componentColors } from '../gatsby-plugin-theme-ui';
 
 
 const IndexPage = () => {
@@ -15,7 +17,7 @@ const IndexPage = () => {
         Hey, I'm Bryce.
         This is where I think out loud about the future.
         We're in an interesting time when there's not one obvious next big thing.
-        I'm hoping to piece together what new things are going to be important, what will quietly go away (or crash and burn), and what tomorrow will look like.
+        I'm hoping to piece together which technologies are going to be important tomorrow and how they will be used.
       </DescriptionParagraph>
       <DescriptionParagraph>
         {/* I’m currently working on <ExternalLink href='https://www.jetpackai.com'>Jetpack</ExternalLink>, a virtual assistant that's your second brain. Previously, I was a PM at <ExternalLink href='https://www.lucidchart.com'>Lucid Software</ExternalLink>, a managing partner at <ExternalLink href='https://www.campusfounders.com'>Campus Founders Fund</ExternalLink>, and a student at <ExternalLink href='https://www.hbs.edu'>HBS</ExternalLink> and <ExternalLink href='https://www.byu.edu'>BYU</ExternalLink>. */}
@@ -27,6 +29,9 @@ const IndexPage = () => {
       <DescriptionParagraph>
         If you want to get in touch, <ExternalLink href='https://twitter.com/bdefig'>DM me on Twitter</ExternalLink>.
       </DescriptionParagraph>
+      <LatestPostsSection>
+        <LatestPosts />
+      </LatestPostsSection>
     </Layout>
   );
 }
@@ -42,6 +47,21 @@ const DescriptionParagraph = (props: any) => {
     <Paragraph sx={paragraphStyle}>
       {props.children}
     </Paragraph>
+  );
+}
+
+const LatestPostsSection = ({ children }) => {
+  return (
+    <div
+      style={{
+        paddingTop: 32,
+        borderStyle: 'solid',
+        borderWidth: '1px 0px 0px 0px',
+        borderColor: componentColors.divider
+      }}
+    >
+      {children}
+    </div>
   );
 }
 
