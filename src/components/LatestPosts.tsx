@@ -29,11 +29,11 @@ const LatestPosts = () => {
 				data.allMdx.nodes.map(node => {
 					return (
 						<article key={node.id} style={{marginBottom: 16}}>
-							<Heading>
-								<InternalLink to={`/blog/${node.slug}`}>
+							<InternalLink to={`/blog/${node.slug}`}>
+								<Heading>
 									{node.frontmatter.title}
-								</InternalLink>
-							</Heading>
+								</Heading>
+							</InternalLink>
 							<Paragraph>{node.frontmatter.date}</Paragraph>
 						</article>
 					);
